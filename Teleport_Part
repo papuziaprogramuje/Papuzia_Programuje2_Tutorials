@@ -1,0 +1,10 @@
+script.Parent.Touched:Connect(function(hit)
+	local Humanoid = hit.Parent:FindFirstChild("Humanoid")
+	if Humanoid then
+		local player = game.Players:GetPlayerFromCharacter(script.Parent)
+		player.Character:MoveTo(Vector3.new(game.Workspace.Part2.Position.X,game.Workspace.Part2.Position.Y,game.Workspace.Part2.Position.Z))
+		script.Parent.CanTouch = false
+		wait(1)
+		script.Parent.CanTouch = true
+	end
+end)
