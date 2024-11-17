@@ -1,0 +1,11 @@
+while wait(0.5) do
+	for i=23,26,0.5 do
+		script.Parent.Position = Vector3.new(i, script.Parent.Position.Y, script.Parent.Position.Z)
+		wait(0.01)
+	end
+	wait(0.5)
+	for i=36,23,-0.5 do
+		script.Parent.Position = Vector3.new(i, script.Parent.Position.Y, script.Parent.Position.Z)
+		wait(0.01)
+	end
+end
